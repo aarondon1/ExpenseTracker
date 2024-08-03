@@ -14,11 +14,7 @@ import {
 import {db} from './firebase';
 
 export default function Home() {
-  const [items, setItems] = useState([
-    // {name: 'item1', price: 10.50},
-    // {name: 'item2', price: 12.20}, 
-    // {name: 'item3', price: 15.00},
-  ]);
+  const [items, setItems] = useState([]);
 
   const [newItem, setNewItem] = useState({name: '', price: ''})
   const [total, setTotal] = useState(0)
